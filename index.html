@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Journey | Ink High</title>
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Montserrat" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("fonts/montserrat-bold.ttf");
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.hero {
+    background: rgb(38,92,170);
+    background-image: linear-gradient(rgba(38,92,170,1) 0%, rgba(38,186,188,1) 45%, rgba(64,223,193,1) 100%);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.navbar-nav>li:first-child {
+   margin-left: 2.5rem;
+}
+
+.navbar-nav>li>a {
+    box-shadow: 2px 0px 0px 0px #40dfc1;
+    line-height: 35%;
+}
+
+.navbar-nav>li:last-child>a {
+   box-shadow: none;
+}
+
+.navbar-nav>form>button {
+    border-radius: 45px;
+    width: 200px;
+}
+
+#hero-text {
+    font-family: 'Montserrat Bold', sans-serif;
+    margin-left: 10%;
+    margin-top: 25vh;
+}
+
+#hero-text>p {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+#journeys {
+    font-family: 'Coming Soon', cursive;
+}
+
+#begin>button {
+    position: fixed;
+    width: 200px;
+    bottom: 65%;
+    border-radius: 45px;
+}
+
+#down-arrow {
+    position: relative;
+    transform: scale(0.08,0.08);   
+    bottom: 4%;
+}
+
+.highlights {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing:5px;
+    color:#40dfc1;
+    margin-top: 3%;
+}
+
+.sub-highlights {
+    color: #bebebe;
+    font-family: 'Coming Soon', cursive;
+    letter-spacing: 1px;
+}
+
+.hr-view {
+    animation: line-expand 5s;
+}
+
+#second>div>button {
+    position: absolute;
+    border-radius: 45px;
+    width: 250px;
+    background-image: linear-gradient( rgba(64,223,193,1) 0%, rgba(38,186,188,1)  100%);
+    border: none;
+    /* box-shadow: 8px 4px 15px 0px rgba(54,208,192,0.28); */
+}
+
+#quotes {
+    position: fixed;
+    height: 70px;
+    margin-left: -13vw;
+    width: auto;
+}
+
+.filler {
+    height: 47px;
+    border-radius: 45px;
+    width: 63%;
+    background-image: linear-gradient( to right,#265caa 0%, #40dfc1  100%);
+    line-height: 10px;
+}
+
+.card {
+    border-radius: 45px;
+    border: none;
+    box-shadow: 1px 3px 30px 1px #36d0c14b;
+    height: 300px;
+}
+
+#third .display{
+    color: #40dfc1;
+}
+
+#third p {
+    color: #858585;
+    font-size: 13px;
+}
+
+.form-control {
+    border-radius: 45px;
+    line-height: 45px;
+    padding: 3%;
+}
+
+@keyframes line-expand {
+    from{
+        width: 0%
+    }
+    to {
+        width: 17%;
+    }
+}
+</style>
+
+<body>
+    <div class="hero">
+        <div class="container pt-3">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/programs">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/partners">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/community">Community</a>
+                        </li>                                          
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Contact Us</button>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="hero-text" data-aos="fade-up">
+            <h1 class="display d-inline">INKHIGH </h1><h1 class="display d-inline" id="journeys"> JOURNEYS.</h1>
+            <p class="mt-3">A <b>one-one high-performance mentorship</b> program<br>
+                for performance and fine artists to improve reach and<br>
+                create a <b>sustainable career</b>.
+        </div>
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row justify-content-center" id="begin" >
+                <button class="btn btn-outline-light" type="submit">Begin Your Journey</button>
+                <a href="#arrow"><img src="img/down-arrow.png" id="down-arrow"></img></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="height:210vh;" id="second">
+        <div class="row justify-content-center" data-aos="fade-up">
+            <h1 class="highlights">MENTORSHIP. REACH. SUSTAINABILITY.</h1>
+        </div>
+        <hr style="width:17%">
+        <div class="row justify-content-center" data-aos="fade-up">
+            <h6 class="sub-highlights">SOLVING JUST WHAT NEEDS TO BE.</h6>
+        </div>
+        <div class="row justify-content-center" style="height:15vh;"></div>
+        <div class="row justify-content-center" data-aos="fade-up">
+            <button class="btn btn-dark btn-lg shadow" type="submit">Explore The Path</button>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" style="margin-top:15vh;">
+            <img src="img/quotes.png" id="quotes"/>
+            <h2 class="highlights">THE ROADS</h2>
+        </div>
+        <hr style="width:17%">
+
+        <div class="row" data-aos="fade-up" style="margin-top:15vh;">
+            <div class="container filler">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="font-family:'Montserrat, sans-serif';">
+                            <h6 class="d-inline" style="color: #40dfc1; letter-spacing:3px;"><b>STANDUP</b></h6>
+                            <h6 class="d-inline" style="letter-spacing:3px;">COMEDY</h6>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary float-right mt-2 shadow-sm" style="border-radius:45px; width:150px; height: 30px; font-size: 9pt; background-color: #003785; border:none;">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="width:65%;">
+        <div class="card-deck mt-5" data-aos="fade-up">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Saadiya</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Saadiya</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Saadiya</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Saadiya</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" style="margin-top:15vh;">
+            <div class="container filler">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="font-family:'Montserrat, sans-serif';">
+                            <h6 class="d-inline" style="color: #40dfc1; letter-spacing:3px;"><b>MUSIC</b></h6>
+                            <h6 class="d-inline" style="letter-spacing:3px;">PERFORMANCE</h6>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary float-right mt-2 shadow-sm" style="border-radius:45px; width:150px; height: 30px; font-size: 9pt; background-color: #003785; border:none;">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="width:65%;">
+            <div class="card-deck mt-5" data-aos="fade-up">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Saadiya</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Saadiya</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Saadiya</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Saadiya</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+    </div>
+
+    <div class="container-fluid" style="height:125vh;" id="third">
+        <div class="container" style="width:65%;">
+        <div class="row justify-content-center" data-aos="fade-up" style="margin-top:15vh;">
+            <img src="img/quotes.png" id="quotes"/>
+            <h2 class="highlights">VITALITIES</h2>
+        </div>
+        <hr style="width:17%" data-aos="fade-up">
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>CONTACTS</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>PRODUCTION</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>CERTIFICATION</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>GROOMING</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>EARNING</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>ARTIST MANAGEMENT</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>PERFORMANCE PLATFORMS</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h5 class="display"><b>COMMUNITY ACCESS</b></h5>
+                <p>
+                    Giving you the right connections in the <br> 
+                    industry so you dont spend another day <br>
+                    searching.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="fourth" style="height:100vh;">
+        <div class="container" style="width:65%;">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <img src="img/quotes.png" id="quotes"/>
+                <h2 class="highlights">THE PROCESS</h2>
+            </div>
+        <hr style="width:17%" data-aos="fade-up">
+    </div>
+    </div>
+    <div class="container-fluid" id="footer" style="height:80vh; ">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <h2 class="display" style="color:black; font-family: 'Coming Soon', cursive;">LET'S NOT TALK.</h2>
+                </div>
+                <div class="row">
+                    <h2 class="display" style="color:black; font-family: 'Montserrat Bold', sans-serif;">WE'LL LISTEN. TO YOUR ART.</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Name">
+                    </div>
+                    <div class="form-inline justify-content-between mb-3">
+                        <input type="text" class="form-control" id="phone" aria-describedby="nameHelp" placeholder="Phone Number" style="width:49%">
+                        <input type="text" class="form-control" id="purpose" aria-describedby="nameHelp" placeholder="Purpose" style="width:49%">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="3" placeholder="Message" style="border-radius:30px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    AOS.init({
+        duration: 2000,
+    });
+
+var $animation_elements = $('hr');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('hr-view');
+    } else {
+      $element.removeClass('hr-view');
+    }
+  });
+} 
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+</script>
+
+</html>
