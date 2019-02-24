@@ -103,7 +103,6 @@ nav a:hover {
 .sub-highlights {
     color: #bebebe;
     font-family: 'Coming Soon', cursive;
-    letter-spacing: 1px;
 }
 
 .hr-view {
@@ -150,10 +149,55 @@ nav a:hover {
     font-size: 13px;
 }
 
+#footer {
+    background-image: linear-gradient(rgba(64,223,193,1) 0%, rgba(38,186,188,1) 65%,rgba(38, 93, 170, 0.623) 100%) ;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Montserrat Hairline";
+    src: url("fonts/montserrat-hairline.ttf");
+}
+
 .form-control {
+    font-family: 'Montserrat Hairline', sans-serif;
+    font-size: 13pt;
     border-radius: 45px;
     line-height: 45px;
     padding: 3%;
+    border-color: #fff;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+#contact-submit {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 120px;
+    line-height: 12px;
+    color: #40dfc1;
+    font-size: 9pt;
+    border: none;
+}
+
+.social {
+    height: 35px;
+    width: auto;
+}
+
+#footer p {
+    font-size: 9pt;
+}
+
+#site-map {
+}
+
+#site-map>button{
+    border-radius: 25px;
+    width: 180px;
 }
 
 @keyframes line-expand {
@@ -432,35 +476,57 @@ nav a:hover {
         <hr style="width:17%" data-aos="fade-up">
     </div>
     </div>
-    <div class="container-fluid" id="footer" style="height:80vh; ">
-        <div class="container">
+
+    <div class="container-fluid" id="footer" style="height:92vh;">
+        <div class="container p-5">
             <div class="row">
             <div class="col-md-6">
                 <div class="row">
-                    <h2 class="display" style="color:black; font-family: 'Coming Soon', cursive;">LET'S NOT TALK.</h2>
+                    <h2 class="display" style="font-family: 'Coming Soon', cursive;"  data-aos="fade-up">LET'S NOT TALK.</h2>
                 </div>
                 <div class="row">
-                    <h2 class="display" style="color:black; font-family: 'Montserrat Bold', sans-serif;">WE'LL LISTEN. TO YOUR ART.</h2>
+                    <h2 class="display" style="font-family: 'Montserrat Bold', sans-serif;"  data-aos="fade-up">WE'LL LISTEN. TO YOUR ART.</h2>
+                </div>
+                <div class="row mt-5 py-3" style="font-size:11pt;"  data-aos="fade-up">
+                    <p>+91 9962207197 | journeys@inkhigh.com</p><br>
+                </div>
+                <div class="row" style="font-size:11pt;"  data-aos="fade-up">
+                    <p>Apt. No. 3168. Estancia Village, Gudu-<br>vanchery, Chennai - 603203</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <form>
+                <form data-aos="fade-up">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Name">
+                        <input type="text" class="form-control bg-transparent" id="name" aria-describedby="nameHelp" placeholder="Name">
                     </div>
                     <div class="form-inline justify-content-between mb-3">
-                        <input type="text" class="form-control" id="phone" aria-describedby="nameHelp" placeholder="Phone Number" style="width:49%">
-                        <input type="text" class="form-control" id="purpose" aria-describedby="nameHelp" placeholder="Purpose" style="width:49%">
+                        <input type="text" class="form-control bg-transparent" id="phone" aria-describedby="nameHelp" placeholder="Phone Number" style="width:49%">
+                        <input type="text" class="form-control bg-transparent" id="purpose" aria-describedby="nameHelp" placeholder="Purpose" style="width:49%">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="email" placeholder="Email Address">
+                        <input type="text" class="form-control bg-transparent" id="email" placeholder="Email Address">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="message" rows="3" placeholder="Message" style="border-radius:30px;"></textarea>
+                        <textarea class="form-control bg-transparent pt-1" id="message" rows="3" placeholder="Message" style="border-radius:30px;"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                    <button type="submit" class="btn btn-primary float-right" id="contact-submit"><b>SUBMIT</b></button>
                 </form>
             </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="height:1px; background-color:#fff; position: absolute; left: 0;" data-aos="fade-up"></div>
+        <div class="container-fluid mt-1"  data-aos="fade-up">
+            <div class="row justify-content-center">
+                <a class="d-inline p-3" href="#social"><img class="social" src="img/social/facebook.png"></a>
+                <a class="d-inline p-3" href="#social"><img class="social" src="img/social/twitter.png"></a>
+                <a class="d-inline p-3" href="#social"><img class="social" src="img/social/insta.png"></a>
+                <a class="d-inline p-3" href="#social"><img class="social" src="img/social/youtube.png"></a>
+            </div>
+            <div class="row justify-content-center">
+                <p><b>InkHigh Talent and Arts Pvt. Ltd. &copy; 2019</b></p>
+            </div>
+            <div id="site-map" class="container-fluid">
+                <button class="btn btn-outline-light float-right">Site Map</button>
             </div>
         </div>
     </div>
