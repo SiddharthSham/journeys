@@ -79,17 +79,20 @@ nav a:hover {
     font-family: 'Coming Soon', cursive;
 }
 
-#begin>button {
-    position: fixed;
+#begin {
+    position: absolute;
+    bottom: 5%;
+}
+
+#begin button {
     width: 200px;
-    bottom: 65%;
     border-radius: 45px;
+    margin-bottom: 2.5vh;
 }
 
 #down-arrow {
-    position: relative;
-    transform: scale(0.08,0.08);   
-    bottom: 4%;
+    height: 30px;
+    width: auto;
 }
 
 .highlights {
@@ -173,6 +176,11 @@ nav a:hover {
     color: white;
 }
 
+.form-control:focus {
+    box-shadow: 0px 0px 25px -5px rgba(255, 255, 255, 0.8);
+    border-color: #fff; 
+}
+
 #contact-submit {
     background-color: #fff;
     border-radius: 25px;
@@ -189,7 +197,7 @@ nav a:hover {
 }
 
 #footer p {
-    font-size: 9pt;
+    font-size: 11pt;
 }
 
 #site-map {
@@ -250,9 +258,11 @@ nav a:hover {
                 for performance and fine artists to improve reach and<br>
                 create a <b>sustainable career</b>.
         </div>
-        <div class="container-fluid" data-aos="fade-up">
-            <div class="row justify-content-center" id="begin" >
+        <div class="container-fluid" data-aos="fade-up" data-aos-anchor="#hero-text" id="begin">
+            <div class="row justify-content-center">
                 <button class="btn btn-outline-light" type="submit">Begin Your Journey</button>
+            </div>
+            <div class="row justify-content-center">
                 <a href="#arrow"><img src="img/down-arrow.png" id="down-arrow"></img></a>
             </div>
         </div>
@@ -477,7 +487,7 @@ nav a:hover {
     </div>
     </div>
 
-    <div class="container-fluid" id="footer" style="height:92vh;">
+    <div class="container-fluid" id="footer">
         <div class="container p-5">
             <div class="row">
             <div class="col-md-6">
@@ -488,10 +498,12 @@ nav a:hover {
                     <h2 class="display" style="font-family: 'Montserrat Bold', sans-serif;"  data-aos="fade-up">WE'LL LISTEN. TO YOUR ART.</h2>
                 </div>
                 <div class="row mt-5 py-3" style="font-size:11pt;"  data-aos="fade-up">
-                    <p>+91 9962207197 | journeys@inkhigh.com</p><br>
+                    <img class="d-inline" src="img/phone.png" style="height:25px; width:auto;"></img>
+                    <p class="d-inline ml-3">+91 9962207197 | journeys@inkhigh.com</p><br>
                 </div>
                 <div class="row" style="font-size:11pt;"  data-aos="fade-up">
-                    <p>Apt. No. 3168. Estancia Village, Gudu-<br>vanchery, Chennai - 603203</p>
+                    <img class="d-inline" src="img/location.png" style="height:25px; width:auto;"></img>
+                    <p class="d-inline ml-3">Apt. No. 3168. Estancia Village, Gudu-<br>vanchery, Chennai - 603203</p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -514,8 +526,8 @@ nav a:hover {
             </div>
             </div>
         </div>
-        <div class="container-fluid" style="height:1px; background-color:#fff; position: absolute; left: 0;" data-aos="fade-up"></div>
-        <div class="container-fluid mt-1"  data-aos="fade-up">
+        <div class="container-fluid" style="height:1px; background-color:#fff; position: absolute; left: 0;"></div>
+        <div class="container-fluid mt-1" >
             <div class="row justify-content-center">
                 <a class="d-inline p-3" href="#social"><img class="social" src="img/social/facebook.png"></a>
                 <a class="d-inline p-3" href="#social"><img class="social" src="img/social/twitter.png"></a>
@@ -524,9 +536,6 @@ nav a:hover {
             </div>
             <div class="row justify-content-center">
                 <p><b>InkHigh Talent and Arts Pvt. Ltd. &copy; 2019</b></p>
-            </div>
-            <div id="site-map" class="container-fluid">
-                <button class="btn btn-outline-light float-right">Site Map</button>
             </div>
         </div>
     </div>
