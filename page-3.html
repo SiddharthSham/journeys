@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Journey | Ink High</title>
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Montserrat" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+
+<style>
+
+#dream {
+        font-size: 2.8rem;
+        line-height: 40px;
+        margin-top: 20vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+}
+
+#dream p {
+    font-size: 11pt;
+}
+
+#intro {
+        font-size: 0.8rem;
+        line-height: 25px;
+}
+    
+.right-border {
+        box-shadow: -3px 0 0 0 #fff;
+}
+    
+b>a {
+        color: #fff;
+        text-decoration: underline;
+}
+    
+#success>.row {
+        
+}
+    
+#success .display {
+        color: blue;
+}
+    
+#success p {
+        color: grey;
+}
+    
+.subtitle {
+        color: aqua;
+        font-size: 11pt;
+}
+</style>
+
+<body>
+    <div class="hero" style="height:80vh;">
+        <div class="container pt-3">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/programs">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/partners">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/community">Community</a>
+                        </li>                                          
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Contact Us</button>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>  
+        <div class="row" id="dream" data-aos="fade-up">
+            <div class="col-md-4" >
+                <div id="journeys" class="pb-1">AN EVENT</div>
+                <div id="montbold" class="py-1" style="font-weight:bolder;">FOR EVERY</div>
+                <div id="journeys" class="pt-2">OCCASION.</div>
+            </div>
+            <div class="col-md-1 right-border"></div>
+            <div class="col-md-7" id="intro">
+                <p>
+                    We are not event managers. 
+                </p>
+                <p>
+                    We are event <b>creators</b>.
+                </p>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>  
+    <div class="container-fluid mt-5" style="height:150vh;">
+        <div class="row justify-content-center p-3">
+            <div class="col-md-4">
+                <div class="card" style="height:65vh; width:25vw;"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="height:65vh; width:25vw;"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center p-3">
+            <div class="col-md-4">
+                <div class="card" style="height:65vh; width:25vw;"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="height:65vh; width:25vw;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+        AOS.init({
+            duration: 2000,
+        });
+    
+    var $animation_elements = $('hr');
+    var $window = $(window);
+    
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+     
+      $.each($animation_elements, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+     
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+          $element.addClass('hr-view');
+        } else {
+          $element.removeClass('hr-view');
+        }
+      });
+    } 
+    
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+    </script>
+
+</html>
