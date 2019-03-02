@@ -102,7 +102,7 @@ nav a:hover {
     animation: line-expand 5s;
 }
 
-#second>div>button {
+#second>div>button, #map>div>button {
     position: absolute;
     border-radius: 45px;
     width: 250px;
@@ -188,9 +188,6 @@ nav a:hover {
 
 #footer p {
     font-size: 11pt;
-}
-
-#site-map {
 }
 
 #site-map>button{
