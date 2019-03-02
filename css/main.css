@@ -1,0 +1,208 @@
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("fonts/montserrat-bold.ttf");
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.hero {
+    background: rgb(38,92,170);
+    background-image: linear-gradient(0deg,rgba(85,251,197,1) 0%, rgba(48,199,191,1) 42%, rgba(4,143,182,1) 100%);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.navbar-nav>li:first-child {
+   margin-left: 2.5rem;
+}
+
+.navbar-nav>li>a {
+    box-shadow: 2px 0px 0px 0px #40dfc1;
+    line-height: 35%;
+}
+
+.navbar-nav>li:last-child>a {
+   box-shadow: none;
+}
+
+.navbar-nav>form>button {
+    border-radius: 45px;
+    width: 200px;
+}
+
+.montbold {
+    font-family: 'Montserrat Bold', sans-serif;
+}
+
+#hero-text {
+    font-family: 'Montserrat Bold', sans-serif;
+    margin-left: 10%;
+    margin-top: 25vh;
+}
+
+#hero-text>p {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+#journeys {
+    font-family: 'Coming Soon', cursive;
+}
+
+#begin {
+    position: absolute;
+    bottom: 5%;
+}
+
+#begin button {
+    width: 200px;
+    border-radius: 45px;
+    margin-bottom: 2.5vh;
+}
+
+#down-arrow {
+    height: 30px;
+    width: auto;
+}
+
+.highlights {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing:5px;
+    color:#40dfc1;
+    margin-top: 3%;
+}
+
+.sub-highlights {
+    color: #bebebe;
+    font-family: 'Coming Soon', cursive;
+}
+
+.hr-view {
+    animation: line-expand 5s;
+}
+
+#second>div>button {
+    position: absolute;
+    border-radius: 45px;
+    width: 250px;
+    background-image: linear-gradient( rgba(64,223,193,1) 0%, rgba(38,186,188,1)  100%);
+    border: none;
+    /* box-shadow: 8px 4px 15px 0px rgba(54,208,192,0.28); */
+}
+
+#quotes {
+    position: fixed;
+    height: 70px;
+    margin-left: -13vw;
+    width: auto;
+}
+
+.filler {
+    height: 47px;
+    border-radius: 45px;
+    width: 63%;
+    background-image: linear-gradient( to right,#265caa 0%, #40dfc1  100%);
+    line-height: 10px;
+}
+
+.card {
+    border-radius: 45px;
+    border: none;
+    box-shadow: 1px 3px 30px 1px #36d0c14b;
+    height: 300px;
+}
+
+#third .display{
+    color: #40dfc1;
+}
+
+#third p {
+    color: #858585;
+    font-size: 13px;
+}
+
+#footer {
+    background-image: linear-gradient(0deg,rgba(85,251,197,1) 0%, rgba(48,199,191,1) 42%, rgba(4,143,182,1) 100%);
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Montserrat Hairline";
+    src: url("fonts/montserrat-hairline.ttf");
+}
+
+.form-control {
+    font-family: 'Montserrat Hairline', sans-serif;
+    font-size: 13pt;
+    border-radius: 45px;
+    line-height: 45px;
+    padding: 3%;
+    border-color: #fff;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 25px -5px rgba(255, 255, 255, 0.8);
+    border-color: #fff; 
+}
+
+#contact-submit {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 120px;
+    line-height: 12px;
+    color: #40dfc1;
+    font-size: 9pt;
+    border: none;
+}
+
+.social {
+    height: 35px;
+    width: auto;
+}
+
+#footer p {
+    font-size: 11pt;
+}
+
+#site-map {
+}
+
+#site-map>button{
+    border-radius: 25px;
+    width: 180px;
+}
+
+@keyframes line-expand {
+    from{
+        width: 0%
+    }
+    to {
+        width: 17%;
+    }
+}
