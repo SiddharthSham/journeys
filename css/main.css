@@ -102,13 +102,12 @@ nav a:hover {
     animation: line-expand 5s;
 }
 
-#second>div>button, #map>div>button, #artist button, .form-inline button {
+#second>div>button, #map>div>button, #artist button, #letter>button {
     position: absolute;
     border-radius: 45px;
     width: 250px;
     background-image: linear-gradient( rgba(64,223,193,1) 0%, rgba(38,186,188,1)  100%);
     border: none;
-    /* box-shadow: 8px 4px 15px 0px rgba(54,208,192,0.28); */
 }
 
 #quotes {
@@ -130,7 +129,7 @@ nav a:hover {
     border-radius: 45px;
     border: none;
     box-shadow: 1px 3px 30px 1px #36d0c14b;
-    height: 300px;
+    height: 45vh;
 }
 
 #third .display{
@@ -228,3 +227,16 @@ nav a:hover {
     border-bottom-left-radius: 33vw;
     border-bottom-right-radius: 33vw;
   }
+
+.round {
+    border-radius: 50%;
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.card-text {
+    font-size: 10pt;
+    color: gray;
+}
