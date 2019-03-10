@@ -143,7 +143,7 @@ nav a:hover {
 }
 
 #footer {
-    background-image: linear-gradient(0deg,rgba(85,251,197,1) 0%, rgba(48,199,191,1) 42%, rgba(4,143,182,1) 100%);
+    background-image: linear-gradient(0deg,rgba(4,143,182,1) 0%, rgba(48,199,191,1) 58%,rgba(85,251,197,1) 100% );
     background-repeat: no-repeat;
 }
 
@@ -203,3 +203,12 @@ nav a:hover {
         width: 17%;
     }
 }
+
+.circle {
+    width: 33vw;
+    height: 16.5vw;
+    background-image: linear-gradient(180deg,rgba(4,143,182,1) 0%, rgba(48,199,191,1) 58%,rgba(85,251,197,1) 100% );
+    border-bottom-left-radius: 33vw;
+    border-bottom-right-radius: 33vw;
+    margin-top: -7vh;
+  }
