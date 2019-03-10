@@ -43,7 +43,7 @@ nav a:hover {
    box-shadow: none;
 }
 
-.navbar-nav>form>button {
+.navbar-nav>form>button, #fourth button {
     border-radius: 45px;
     width: 200px;
 }
@@ -102,7 +102,7 @@ nav a:hover {
     animation: line-expand 5s;
 }
 
-#second>div>button, #map>div>button, #artist button, #letter>button {
+#second>div>button, #map>div>button, #artist button, #letter button {
     position: absolute;
     border-radius: 45px;
     width: 250px;
@@ -223,7 +223,7 @@ nav a:hover {
 .circle {
     width: 33vw;
     height: 16.5vw;
-    background-image: linear-gradient(180deg,rgba(4,143,182,1) 0%, rgba(48,199,191,1) 42%,rgba(85,251,197,1) 100% );
+    background-image: linear-gradient(180deg, rgba(48,199,191,1) 42%,rgba(85,251,197,1) 100% );
     border-bottom-left-radius: 33vw;
     border-bottom-right-radius: 33vw;
   }
@@ -240,3 +240,11 @@ nav a:hover {
     font-size: 10pt;
     color: gray;
 }
+
+.circle-up {
+    width: 16.5vw;
+    height: 8.25vw;
+    background-image: linear-gradient(0deg, rgba(48,199,191,1) 0%,rgba(85,251,197,1) 100% );
+    border-top-left-radius: 16.5vw;
+    border-top-right-radius: 16.5vw;
+  }
