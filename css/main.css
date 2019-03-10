@@ -102,7 +102,7 @@ nav a:hover {
     animation: line-expand 5s;
 }
 
-#second>div>button, #map>div>button, #artist button {
+#second>div>button, #map>div>button, #artist button, .form-inline button {
     position: absolute;
     border-radius: 45px;
     width: 250px;
