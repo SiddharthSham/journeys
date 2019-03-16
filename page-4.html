@@ -243,4 +243,13 @@ b>a {
     $window.trigger('scroll');
     </script>
 
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('{{ site.baseurl }}/sw.js');
+      });
+    }
+</script>
+
+
 </html>

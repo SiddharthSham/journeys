@@ -8,6 +8,10 @@
     display: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
