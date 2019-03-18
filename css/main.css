@@ -252,3 +252,8 @@ nav a:hover {
     border-top-left-radius: 16.5vw;
     border-top-right-radius: 16.5vw;
   }
+
+.icon {
+    width: 100%;
+    height: auto;
+}
