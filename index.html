@@ -16,26 +16,26 @@
     <div class="hero">
         <div class="container pt-3">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" width="70px" height="auto"/></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="70px" height="auto"/></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
+                            <a class="nav-link" href="page-2.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/programs">Programs</a>
+                            <a class="nav-link" href="page-3.html">Programs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/events">Events</a>
+                            <a class="nav-link" href="page-3.html">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/partners">Partners</a>
+                            <a class="nav-link" href="page-4.html">Partners</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/community">Community</a>
+                            <a class="nav-link" href="page-4.html">Community</a>
                         </li>                                          
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -327,19 +327,19 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <form data-aos="fade-up">
+                <form data-aos="fade-up" method="post" action="mailer.php">
                     <div class="form-group">
-                        <input type="text" class="form-control bg-transparent" id="name" aria-describedby="nameHelp" placeholder="Name">
+                        <input type="text" class="form-control bg-transparent" name="name" id="name" aria-describedby="nameHelp" placeholder="Name">
                     </div>
                     <div class="form-inline justify-content-between mb-3">
-                        <input type="text" class="form-control bg-transparent" id="phone" aria-describedby="nameHelp" placeholder="Phone Number" style="width:49%">
-                        <input type="text" class="form-control bg-transparent" id="purpose" aria-describedby="nameHelp" placeholder="Purpose" style="width:49%">
+                        <input type="text" class="form-control bg-transparent" name="phone_no" id="phone" aria-describedby="nameHelp" placeholder="Phone Number" style="width:49%">
+                        <input type="text" class="form-control bg-transparent" name="purpose" id="purpose" aria-describedby="nameHelp" placeholder="Purpose" style="width:49%">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control bg-transparent" id="email" placeholder="Email Address">
+                        <input type="text" class="form-control bg-transparent" name="email" id="email" placeholder="Email Address">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control bg-transparent pt-1" id="message" rows="3" placeholder="Message" style="border-radius:30px;"></textarea>
+                        <textarea class="form-control bg-transparent pt-1" name="message" id="message" rows="3" placeholder="Message" style="border-radius:30px;"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" id="contact-submit"><b>SUBMIT</b></button>
                 </form>
