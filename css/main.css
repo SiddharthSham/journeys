@@ -122,11 +122,9 @@ nav a:hover {
 }
 
 .filler {
-    height: 47px;
     border-radius: 45px;
     width: 63%;
     background-image: linear-gradient( to right,#265caa 0%, #40dfc1  100%);
-    line-height: 10px;
 }
 
 .card {
