@@ -223,11 +223,12 @@ nav a:hover {
 }
 
 .circle {
-    width: 33vw;
+    width: 40vw;
     height: 16.5vw;
     background-image: linear-gradient(180deg, rgba(48,199,191,1) 42%,rgba(85,251,197,1) 100% );
-    border-bottom-left-radius: 33vw;
-    border-bottom-right-radius: 33vw;
+    border-radius: 50% / 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
 .round {
