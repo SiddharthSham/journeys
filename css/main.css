@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Montserrat Bold";
-    src: url("fonts/montserrat-bold.ttf");
+    src: url("../fonts/montserrat-bold.ttf");
 }
 
 ::-webkit-scrollbar {
@@ -131,7 +131,6 @@ nav a:hover {
     border-radius: 45px;
     border: none;
     box-shadow: 1px 3px 30px 1px #36d0c14b;
-    height: 45vh;
 }
 
 #third .display{
@@ -150,7 +149,7 @@ nav a:hover {
 
 @font-face {
     font-family: "Montserrat Hairline";
-    src: url("fonts/montserrat-hairline.ttf");
+    src: url("../fonts/montserrat-hairline.ttf");
 }
 
 .form-control {
@@ -208,9 +207,11 @@ nav a:hover {
 @keyframes hoverin {
     from {
         filter: grayscale(50%);
+        opacity: 0.5;
     }
     to{
         filter: grayscale(0%);
+        opacity: 1;
     }
 }
 
@@ -233,14 +234,20 @@ nav a:hover {
 
 .round {
     border-radius: 50%;
-    width: 80%;
-    height: 50%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 50%;
+    transform: translate(-50%,0);
     margin-top: 5%;
+    filter: grayscale(50%);
+    opacity: 0.5;
+}
+
+.round:hover {
+    animation: hoverin 2s;
 }
 
 .card-text {
-    font-size: 10pt;
+    font-size: 9pt;
     color: gray;
 }
 
